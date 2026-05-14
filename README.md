@@ -1,4 +1,8 @@
-```markdown
+
+
+<img width="1900" height="793" alt="image" src="https://github.com/user-attachments/assets/77dd1822-fd28-425f-9cf6-cb426e06740d" />
+
+
 # 🩺 Hybrid Skin Cancer Diagnostic System (XAI-Enabled)
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/)
