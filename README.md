@@ -94,9 +94,11 @@ docker run -p 8000:8000 skin-cancer-ai
 ```
 
 ## Output Images:
-<img width="591" height="440" alt="image" src="https://github.com/user-attachments/assets/fc742c06-9f0f-4e08-9c3e-a71342898b2a" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/fc742c06-9f0f-4e08-9c3e-a71342898b2a" />
+
 
 <img width="1686" height="351" alt="image" src="https://github.com/user-attachments/assets/1d4e4cbb-1ff0-4853-8152-d43f0e1138b7" />
+
 
 <img width="1047" height="416" alt="image" src="https://github.com/user-attachments/assets/1caf43fc-aee2-4a9f-a150-6293c6687bd5" />
 
