@@ -1,6 +1,4 @@
 
-APP LINK=
-
 <img width="1900" height="793" alt="image" src="https://github.com/user-attachments/assets/77dd1822-fd28-425f-9cf6-cb426e06740d" />
 
 
@@ -171,8 +169,6 @@ docker run -p 8000:8000 -p 8501:8501 skin-cancer-xai-system:latest
 
 <img width="1047" height="400" alt="image" src="https://github.com/user-attachments/assets/1caf43fc-aee2-4a9f-a150-6293c6687bd5" />
 
-```
 
----
 
 
