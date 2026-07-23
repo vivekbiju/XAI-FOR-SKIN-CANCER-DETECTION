@@ -1,7 +1,6 @@
 live link = 
 <img width="1900" height="793" alt="image" src="https://github.com/user-attachments/assets/77dd1822-fd28-425f-9cf6-cb426e06740d" />
 
-<img width="1398" height="793" alt="image" src="https://github.com/user-attachments/assets/5b79fd8b-b53b-4c9e-ab59-deb1ec8a8de3" />
 
 # 🩺 Hybrid Skin Cancer Diagnostic System (XAI-Enabled)
 
