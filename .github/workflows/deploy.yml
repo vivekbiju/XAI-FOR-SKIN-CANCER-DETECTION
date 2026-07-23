@@ -1,0 +1,51 @@
+name: CI/CD Medical Application Pipeline
+
+on:
+  push:
+    branches: [ "main" ]  # Triggers the pipeline whenever code is pushed to the main branch
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test-and-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-with-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Optional: Add your unit tests or lint checks here
+      # - name: Run Test Suite
+      #   run: pytest
+
+  build-and-deploy:
+    needs: test-and-lint
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Render handles the actual Docker build process natively when kicked off,
+      # so our pipeline simply needs to securely ping the triggers.
+      
+      - name: Trigger Render Backend Deployment
+        run: |
+          echo "Deploying Backend API Service..."
+          curl -X POST "${{ secrets.RENDER_BACKEND_DEPLOY_HOOK }}"
+
+      - name: Trigger Render Frontend Deployment
+        run: |
+          echo "Deploying Frontend Streamlit UI..."
+          curl -X POST "${{ secrets.RENDER_FRONTEND_DEPLOY_HOOK }}"

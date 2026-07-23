@@ -1,0 +1,15 @@
+# Ignore local python environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore heavy training artifacts and notebooks
+notebooks/
+best_model/
+data/
+
+# Ignore git configurations
+.git
+.github
+.gitignore
